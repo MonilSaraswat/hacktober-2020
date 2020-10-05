@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be196be553.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="new.css">
+    <script src="new.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+</head>
+<body>
+
+<div class="container-fluid mt-2 ml-lg-4 ">
+    <div class="row">
+        <div class="col-lg-3 gray-back round-border pb-lg-2">
+            <div class="row">
+                <div class="col-lg-12 text-center lead pb-1 font-weight-normal">To-Do List</div>
+            </div>
+
+            <div id="main-content"> 
+                <div class="row" id="list-heading">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-8"><input class="no-decoration" type="text" value="heading" disabled id="main-heading" name="main-heading"/></div>
+                    <div class="col-lg-1"><i class="fas fa-pen" onclick="edit_head('main-heading')" onblur="disable(main-heading)"></i></div>
+
+                </div>
+
+                <!-- Format of list Item -->
+                <!-- <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-1"><input type="checkbox" name="item-checkbox" id="item-checkbox" onclick="validate()"></div>
+                    <div class="col-lg-9"><input class="no-decoration" type="text"  value="text" id="check"/></div>
+                </div> -->
+           
+                <div class="row mt-lg-2" id="add-item-row" >
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-8"><input class="no-decoration border border-dark rounded p-1" type="text" placeholder="Enter Item" id="item"></div>
+                    <div class="col-lg-1"><i class="fas fa-plus-circle p-1" onclick="addItem()" id="add_btn"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

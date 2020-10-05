@@ -1,0 +1,21 @@
+.gray-back{
+    background-color: rgba(44, 44, 44, 0.103)
+}
+
+.round-border{
+    border: 1px solid rgba(44, 44, 44, 0.281) ;
+    border-radius: 5px ;
+}
+.no-decoration{
+    text-decoration: none ;
+    background-color: inherit;
+    border: 0px ;
+}
+
+.margin-right{
+    margin-right: 10px;
+}
+
+.small{
+    font-size: 15px ;
+}
