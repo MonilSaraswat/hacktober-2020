@@ -1,4 +1,4 @@
-var count = 0 ;
+var counter = 0 ;
 
 function addItem(){
 
@@ -13,16 +13,16 @@ function addItem(){
 
     var main = document.createElement("div");
     main.classList.add("row");
-    main.setAttribute("id" , "row"+count)
+    main.setAttribute("id" , "row"+counter)
 
     main.innerHTML=  '<div class="col-lg-1"></div>'+
-    '<div class="col-lg-1"><input type="checkbox" onclick="validate(row'+count+')"></div>'+
+    '<div class="col-lg-1"><input type="checkbox" onclick="validate(row'+counter+')"></div>'+
     '<div class="col-lg-7"><input class="no-decoration" disabled type="text" value="'+data+'"/></div>'+
-    '<div class="col-lg-1 small"><i class="fas fa-pen" onclick="edit(row'+count+')"></i></div>'+
-    '<div class="col-lg-1"><i class="far fa-times-circle" onclick="remove(row'+count+')"></i></div>' ;
+    '<div class="col-lg-1 small"><i class="fas fa-pen" onclick="edit(row'+counter+')"></i></div>'+
+    '<div class="col-lg-1"><i class="far fa-times-circle" onclick="remove(row'+counter+')"></i></div>' ;
 
     parent.insertBefore(main , child);   
-    count++ ;                   
+    counter++ ;                   
     data_field.value = "";
 }
 }
