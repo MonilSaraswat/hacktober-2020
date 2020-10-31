@@ -13,6 +13,7 @@ function addItem(){
 
     var main = document.createElement("div");
     main.classList.add("row");
+    console.log(main);
     main.setAttribute("id" , "row"+counter)
 
     main.innerHTML=  '<div class="col-lg-1"></div>'+
